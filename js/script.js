@@ -10,8 +10,8 @@ const prevBtn = document.getElementById("prevBtn")
 const nextBtn = document.getElementById("nextBtn")
 const resetBtn = document.getElementById("resetBtn")
 const contentApp = document.getElementById("app")
-const limit = 10;
-let offset = 0;
+//const limit = 10;
+//let offset = 0;
 let nextPage = ''
 let previousPage = ''
 
@@ -63,10 +63,12 @@ async function functionTemplate(pokemones) {
         contentApp.innerHTML +=
         `
         <li>
-          <div class"pokemonsCard">
-           <img src=${img} alt=${name} class="card"/>
-           <h2><span><b>${name}</b></span></h2>
-           </div>
+            <div class"pokemonsCard">
+              <img src=${img} alt=${name} class="card"/>
+            </div>
+           <div class="name">
+        <h2><span><b>${name} </b></span></h2>
+        </div>
         </li>
         ` 
     })
